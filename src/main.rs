@@ -214,7 +214,8 @@ fn main() {
     let mut num2 = BigNumber::from_string(&second_string);
 
     let mut result = num1.clone();
-    result.add(&mut num2);
+    result.subtract(&mut num2);
+    result.make_abs();
 
     result.print();
 }
